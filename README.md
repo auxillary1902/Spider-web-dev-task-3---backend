@@ -3,7 +3,7 @@ This is a online notice board for students of Nit. It has a simple user interfac
 
 
 Server routes:
-
+Majorily used server requests are POST and CONNECT. 
 
 
 
