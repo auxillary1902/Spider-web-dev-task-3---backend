@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page For Admin</title>
+</head>
+<body>
+<style type="text/css">
+	h1{
+		text-align: center;
+		font-family: cursive;
+		font-size: 150%;
+		border:2px solid rgb(61,89,193);
+		border-radius: 5px;
+
+	}
+	p{
+		font-family: georgia;
+		font-size: 120%;
+		text-align: center;
+	}
+
+#back
+{
+	text-align: center;
+}
+
+	</style>
+<h1>Dashboard Login For Admininstrators And Professors</h1>
+<p> Please login into your account using a valid Admin username and password</p>
+</body>
+<form action="loggedinadmin.php" method="POST">
+<table border="0" align="center">
+<tr>
+<td>Username:</td>
+<td align="center"><input type="text" name="username"></td>
+</tr>
+<tr>
+<td>Password:</td>
+<td align="center"><input type="password" name="pass"></td>
+</tr>
+<tr>
+<td colspan="3" align="center"><input type="submit" name="submit"></td>
+</tr>
+</table>
+<br>
+<a href="loginpage.html"><p id="back">Not an Admin?Click here to go back and login as a student</p></a>
+</body>
+</html>

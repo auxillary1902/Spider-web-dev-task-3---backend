@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page to access</title>
+	<meta charset="utf-8">
+
+</head>
+<body bgcolor="#0B85B7">
+<style type="text/css">
+	h1{
+		text-align: center;
+		color: #D04A1B;
+		font-family: cursive;
+		font-size: 150%;
+		border:2px solid rgb(208,200,27);
+		border-radius:5px;
+	}
+	p{
+		font-family: Georgia;
+		font-size: 120%;
+	}
+	form{
+		 display: block;
+    margin-top: 0em;
+    font-size: 150%
+	}
+table
+{text-align: center;
+	align-items: center;
+}
+
+</style>
+<h1>Signup to see the Notice Board.</h1>
+<p>Add the corresponding credentials.You will be first registered as a student. You can request permission to change your status. As of now you can only view the notices on the board and cannot add or edit anything</p>
+<div class="form">
+<form action="signuppage.php" method="POST">
+<table border="1" align="center">
+<tr>
+<td>First name:</td>
+<td align="center"><input type="text" name="fname"></td>
+</tr>
+<tr>
+
+<td>Last name:</td>
+<td align="center"><input type="text" name="lname"></td>
+</tr>
+<tr>
+<td>Roll no:</td>
+<td align="center"><input type="text" name="rno"></td>
+</tr>
+<tr>
+
+<td>Department:</td>
+<td align="center"><select name="dpt">
+	<option value="CSE">CSE</option>
+	<option value="ECE">ECE</option>
+	<option value="EEE">EEE</option>
+	<option value="ICE">ICE</option>
+	<option value="META">META</option>
+	<option value="PROD">PROD</option>
+	<option value="MECH">MECH</option>
+	<option value="CIVIL">CIVIL</option>
+	<option value="CHEM">CHEM</option>
+</select></td>
+</tr>
+<tr>
+
+<td>Username:</td>
+<td align="center"><input type="text" name="username"></td>
+</tr>
+<tr>
+<td>Password:</td>
+<td><input type="password" name="pass"></td>
+</tr>
+<tr>
+
+<td colspan="3" align="center"><input type="submit" value="Submit"/></td>
+</tr>
+</table>
+
+
+</form>
+</div>
+</body>
+</html>

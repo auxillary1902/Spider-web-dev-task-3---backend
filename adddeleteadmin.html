@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bulletin Board Of Assignments</title>
+</head>
+<body>
+<style type="text/css">
+	h1{
+		text-align: center;
+		border:2px solid #3DA1C1;
+		border-radius: 4px;
+		background-color: #1C0FBA;
+		color: white;
+		font-size: 150%;
+		font-family: cursive;
+
+	}
+	p{
+		font-size: 120%;
+		font-family: cursive;text-align: center;
+
+	}
+	div.link{
+		text-align: center;
+	}
+
+
+</style>
+<h1>The Assignments And Announcements Bulletin Board</h1>
+<p> Welcome to the notice board,Administrator. Here You can add and delete notes.</p><br><br>
+<p>Add a note here</p>
+<form action="addadmin.php" method="POST">
+<table align="center">
+<tr>
+<td>Type of Note:</td>
+<td align="center"><input type="text" name="typenote"></td>
+</tr>
+<tr>
+<td>Enter Notice:</td>
+<td align="center"><input type="text" name="notice"></td>
+</tr>
+<tr>
+<td>Enter Notice Number:</td>
+<td align="center"><input type="text" name="number"></td>
+</tr>
+<tr>
+<td colspan="3"><input type="submit" value="Submit"></td>
+</tr>
+</table></form>
+<br>
+<p>Delete a note here:</p>
+<form action="deleteadmin.php" method="POST">
+<table align="center">
+<tr>
+<td>Enter the Notice number to delete:</td>
+<td align="center"><input type="text" name="deletenumber"></td>
+</tr>
+<tr>
+<td colspan="3"><input type="submit" name="Submit">
+</td>
+</tr>
+</table></form>
+<br>
+
+
+</form>
+<br>
+<div class="link">
+<a href="bulletintable.php">Click here to view the bulletin board with existing notices</a><br><br>
+<a href="homeadmin.php">Click here to go back to your Dashboard</a>
+</div>
+
+</body>
+</html>
